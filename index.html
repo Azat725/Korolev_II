@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Королёв ИИ</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar glass">
+      <div class="sidebar-header">
+        <h2>История</h2>
+        <button id="clearHistory" class="btn-ghost">Очистить</button>
+      </div>
+      <ul id="historyList"></ul>
+    </aside>
+
+    <main class="chat-area">
+      <header class="topbar glass">
+        <h1>Королёв ИИ</h1>
+        <button id="themeToggle" class="btn-ghost" title="Переключить тему">☾</button>
+      </header>
+
+      <div id="chat"></div>
+
+      <form id="chatForm">
+        <input type="text" id="userInput" placeholder="Введите запрос..." required />
+        <button type="submit" aria-label="Отправить">➤</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
